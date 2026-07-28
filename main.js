@@ -49,11 +49,11 @@ function doMath() {
 
 
     if (type == "y") {
-        l1.textContent = "x = " + n1.toString() + "² + " + n2.toString() + "²";
+        l1.textContent = "x² = " + n1.toString() + "² + " + n2.toString() + "²";
 
         var addedIt = (n1 * n1) + (n2 * n2);
     
-        l2.textContent = "x = " + addedIt.toString();
+        l2.textContent = "x² = " + addedIt.toString();
     
         l3.textContent = "x = √" + addedIt.toString();
     
@@ -65,21 +65,21 @@ function doMath() {
         var addedIt = 0;
 
         if (n1 > n2) {
-            l1.textContent = "x = " + n1.toString() + "² - " + n2.toString() + "²";
+            l1.textContent = "x² = " + n1.toString() + "² - " + n2.toString() + "²";
             addedIt = (n1 * n1) - (n2 * n2);
 
         } else if (n1 < n2) {
-            l1.textContent = "x = " + n2.toString() + "² - " + n1.toString() + "²";
+            l1.textContent = "x² = " + n2.toString() + "² - " + n1.toString() + "²";
             addedIt = (n2 * n2) - (n1 * n1);
 
         } else {
-            l1.textContent = "x = " + n1.toString() + "² - " + n2.toString() + "²";
+            l1.textContent = "x² = " + n1.toString() + "² - " + n2.toString() + "²";
             addedIt = (n1 * n1) - (n2 * n2);
         }
 
         
     
-        l2.textContent = "x = " + addedIt.toString();
+        l2.textContent = "x² = " + addedIt.toString();
     
 
         l3.textContent = "x = √" + addedIt.toString();
